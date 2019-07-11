@@ -4,7 +4,7 @@
 */
 function mostrar()
 {
-  var dato
+  var dato;
 
   dato = prompt ("dato");
 
