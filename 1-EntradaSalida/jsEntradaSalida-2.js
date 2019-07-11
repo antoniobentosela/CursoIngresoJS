@@ -2,7 +2,7 @@
 y luego mostrarlo por 'alert' al presionar el botón  'mostrar'*/
 function mostrar()
 {
-  var ejercicio
+  var ejercicio;
 
     ejercicio = prompt ("Lo hiciste?");
 

@@ -2,7 +2,7 @@
 y luego mostrarlo por 'Alert' al presionar el botón  'mostrar'*/
 function mostrar()
 {
-  var ejercicio
+  var ejercicio;
 
   ejercicio = document.getElementById ("elNombre").value;
 
