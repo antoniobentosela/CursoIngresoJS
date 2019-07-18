@@ -1,7 +1,15 @@
 function mostrar()
 {
+var numero
+  do {
 
-	var numero = prompt("ingrese un número entre 0 y 10.");
+    numero = prompt ("ingrese un numero");
+    numero = parseInt (numero);
+
+  } while (numero < 0 || numero > 9 || isNaN(numero));
+
+
+  document.getElementById ("Numero").value = numero;
 
 
 }//FIN DE LA FUNCIÓN
