@@ -5,7 +5,7 @@ function mostrar()
 	var positivo=0;
 	var negativo=1;
 
-  while (confirm ("")){
+  do {
 
     do {
       contador = prompt ("escriba un numero");
@@ -21,9 +21,9 @@ function mostrar()
 
       negativo *= contador;
     }
-  }
+  } while (confirm ("Desea continuar?"));
 
-	var respuesta='si';
+
 
 
 document.getElementById('suma').value=positivo;
