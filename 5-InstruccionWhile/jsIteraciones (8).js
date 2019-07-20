@@ -1,29 +1,37 @@
 function mostrar()
 {
 
-	var contador=0;
+  var contador=0;
+  var numero;
 	var positivo=0;
-	var negativo=1;
+  var negativo=1;
+  var respuesta = true
 
-  do {
+  while (respuesta == true){
 
-    do {
-      contador = prompt ("escriba un numero");
-      contador = parseInt (contador);
+   do {
+    
+    numero = prompt ("Escriba un numero");
+    numero = parseInt (numero);
 
-    } while (isNaN(contador));
+   } while (isNaN (num));
+    
+    if (contador > 0){
 
-    if (contador >=0){
+      positivo = positivo + numero;
+    
+    } else{  
+      
+      if (contador < 0){
 
-      positivo += contador;
-
-    } else  {
-
-      negativo *= contador;
+      negativo = negativo * numero;
     }
-  } while (confirm ("Desea continuar?"));
+    
+    respuesta = confirm ("Desea continuar?");
+  
+  }
 
-
+  }
 
 
 document.getElementById('suma').value=positivo;

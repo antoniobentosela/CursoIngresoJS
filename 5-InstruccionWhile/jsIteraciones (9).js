@@ -6,36 +6,53 @@ function mostrar()
   var num;
   var max;
   var min;
-  var primeravez = true;
-
-  while (prompt ("escriba un numero")){
+  var respuesta = true
+  var primeravez;
+  
+  while (respuesta == true){
 
     do {
+      
       num = prompt ("escriba un numero");
       num = parseInt (num);
 
-    } while (isNaN(num));
+    } while (isNaN (num));
 
-      if (primeravez){
+    if (contador == 0)
+    {
+      max = num;
+      min = num;
 
-          primeravez =false;
+    } else {
+
+        if (num > max){
+
           max = num;
-          min = num;
+        }
+       if (num < min){
 
-      }
+        min = num;
+       }
+    }
+
+
+
+    
+    
+  
+    contador = contador +1;
+
+    respuesta = confirm ("Desea continuar?");
 
   }
+
+
+
 
   document.getElementById ("maximo").value = max;
   document.getElementById ("minimo").value = min;
 
-	var respuesta='si';
 
-	while(respuesta!='no')
-	{
-
-
-	}
 
 
 
