@@ -32,7 +32,7 @@ function mostrar()
 
           if (numero1 + numero2 > 10){
 
-            alert ("la suma es " + );
+            alert ("la suma es " + (numero1 + numero2) + " y supero al 10" );
           }
           }
       }

@@ -1,15 +1,15 @@
 
 function mostrar()
 {
-    var dato1  
-    var dato2
+    var ancho  
+    var largo
          
-         dato1 = prompt ("Ancho");
-         dato2 = prompt ("Largo"); 
+         ancho = prompt ("Ancho");
+         largo = prompt ("Largo"); 
 
-            dato1 = parseInt (dato1);
-            dato2 = parseInt (dato2);
+            ancho = parseInt (ancho);
+            largo = parseInt (largo);
 
-                alert ("El perímetro es " + (dato1 + dato2));
+                alert ("El perímetro es " + (ancho + largo));
 
 }
