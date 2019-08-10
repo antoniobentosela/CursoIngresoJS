@@ -9,6 +9,8 @@ function mostrar() {
   var acumulador = 0;
   var edadMax;
   var esPrimerPerro = true;
+  var contadorPesoEdad = 0;
+  
 
   while (contador < 4) {
 
@@ -57,13 +59,19 @@ function mostrar() {
 
     }
 
+    if (peso < 10 && edad > 10){
+      contadorPesoEdad ++;
+      
+    }
   }
 
+  
+ 
   promedio = acumulador / contador;
 
 
 
   alert("El promedio del peso total es " + promedio + "\n" +
     "El perro mas viejo es " + nombreMax);
-
+  alert ("Cantidad animales " + contadorPesoEdad);
 }
